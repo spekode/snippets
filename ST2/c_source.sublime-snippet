@@ -1,0 +1,39 @@
+<snippet>
+	<content><![CDATA[
+// ***************************************************************************
+// ${1:$TM_FILENAME}: ${2:the program}
+// Author: ${3:$TM_FULLNAME}
+// ***************************************************************************
+
+
+// ***************************************************************************
+// Include section
+
+// system
+${4:#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <unistd.h>}
+
+// ***************************************************************************
+// Prototypes section
+
+
+// ***************************************************************************
+// Definitions section
+
+
+// ***************************************************************************
+// Global Variable section
+
+
+// ***************************************************************************
+// Extern section
+
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>#csource</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

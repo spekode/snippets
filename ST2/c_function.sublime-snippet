@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+// ***************************************************************************
+// @fn          ${1:fn_name}
+// @brief       ${2:does something a function would do}
+// @param       ${3:none}
+// @return      ${4:none}
+// ***************************************************************************
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>#function</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

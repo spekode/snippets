@@ -1,0 +1,37 @@
+<snippet>
+	<content><![CDATA[
+// ***************************************************************************
+// ${1:$TM_FILENAME}: ${2:the program}
+// Author: ${3:$TM_FULLNAME} <${4:$TM_EMAIL}>
+// ***************************************************************************
+#ifndef ${1/([^\.]*)\.h/\U\1\E_H_/}
+#define ${1/([^\.]*)\.h/\U\1\E_H_/}
+
+// ***************************************************************************
+// Include section
+
+
+// ***************************************************************************
+// Prototypes section
+
+
+// ***************************************************************************
+// Definitions section
+
+
+// ***************************************************************************
+// Global Variable section
+
+
+// ***************************************************************************
+// Extern section
+
+
+#endif
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>#cheader</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
