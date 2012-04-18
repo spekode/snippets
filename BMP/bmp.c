@@ -226,6 +226,11 @@ void BMP_Destroy(BMPFile **bmpfile) {
 	return;
 }
 
+int BMP_GetHeight(BMPFile *bmpfile) {
+	if (!bmpfile) return 0;
+	return bmpfile->iheader.height;
+}
+
 // ***************************************************************************
 // @fn          BMP_GetPixel
 // @brief       Get a pixel at a position
@@ -254,11 +259,6 @@ void BMP_GetPixel(BMPFile *bmpfile, uint32_t x, uint32_t y, uint8_t *rgb) {
 uint8_t *BMP_GetPixelArray(BMPFile *bmpfile) {
 	if (!bmpfile) return NULL;
 	return bmpfile->pixels;
-}
-
-int BMP_GetHeight(BMPFile *bmpfile) {
-	if (!bmpfile) return 0;
-	return bmpfile->iheader.height;
 }
 
 int BMP_GetWidth(BMPFile *bmpfile) {

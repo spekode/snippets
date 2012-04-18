@@ -21,9 +21,9 @@ typedef void BMPFile;
 // Prototypes section
 BMPFile *BMP_Create(uint16_t width, uint16_t height);
 void BMP_Destroy(BMPFile **bmpfile);
+int BMP_GetHeight(BMPFile *bmpfile);
 void BMP_GetPixel(BMPFile *bmpfile, uint32_t x, uint32_t y, uint8_t *rgb);
 uint8_t *BMP_GetPixelArray(BMPFile *bmpfile);
-int BMP_GetHeight(BMPFile *bmpfile);
 int BMP_GetWidth(BMPFile *bmpfile);
 BMPFile *BMP_Load(char *filename);
 void BMP_SetPixel(BMPFile *bmpfile, uint32_t x, uint32_t y, uint8_t r, uint8_t g, uint8_t b);
