@@ -147,8 +147,8 @@ static uint32_t sanityCheck(uint8_t *buf, uint32_t bufsize) {
 	// BMP data offset within range?
 	if (bheader->bmp_offset >= bufsize) return -1;
 
-	// We only load 24 bit images
-	if (iheader->bitspp != 24) return -1;
+	// We only load 24/32 bit images
+	if (iheader->bitspp != 24 && iheader->bitspp != 32) return -1;
 	// Size of pixel array + offset to array within bounds?
 	if (iheader->bmp_bytesz + bheader->bmp_offset > bufsize) return -1;
 	// We don't do compression
@@ -156,7 +156,7 @@ static uint32_t sanityCheck(uint8_t *buf, uint32_t bufsize) {
 	// We only handle one color plane
 	if (iheader->nplanes != 1) return -1;
 	// Width and height make sense?
-	rowLength = realRowSize(iheader->width, 24);
+	rowLength = realRowSize(iheader->width, iheader->bitspp);
 	if (rowLength * iheader->height != iheader->bmp_bytesz) return -1;
 
 	return 0;
