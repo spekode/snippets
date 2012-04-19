@@ -143,6 +143,16 @@ void glFontDestroy(GLFont **font) {
 	*font = NULL;
 }
 
+void glFontReset(void) {
+	rotateAngle = 0.0;
+	rotatex = 0.0;
+	rotatey = 0.0;
+	rotatez = 0.0;
+	scalex = 1.0;
+	scaley = 1.0;
+	scalez = 1.0;
+}
+
 void glFontRotate(float angle, float x, float y, float z) {
 	rotateAngle = angle;
 	rotatex = x;
@@ -180,18 +190,9 @@ static void _glPrint(float x, float y, float z, char *text, int textlen) {
 
 void glPrint(float x, float y, float z, char *text) {
 	_glPrint(x, y, z, text, strlen(text));
+	//printf("%d\n", strlen(text));
 }
 
 void glPrintChar(float x, float y, float z, char c) {
 	_glPrint(x, y, z, &c, 1);
-}
-
-void glFontReset(void) {
-	rotateAngle = 0.0;
-	rotatex = 0.0;
-	rotatey = 0.0;
-	rotatez = 0.0;
-	scalex = 1.0;
-	scaley = 1.0;
-	scalez = 1.0;
 }
