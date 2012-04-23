@@ -56,7 +56,9 @@ for server in servers:
 		if checkWatch(player):
 			if not checkIgnore(player):
 				if player not in playerlist: playerlist[player] = [server]
-				else: playerlist[player].append(server)
+				else:
+					if server not in playerlist[player]:
+						playerlist[player].append(server)
 
 # Output here, woop.
 
