@@ -1,0 +1,36 @@
+{
+}
+{
+        none 0x00000000
+        tin 0x00100000
+        aluminum 0x00200000
+        iron 0x00300000
+        titanium 0x00400000
+        steel 0x00500000
+        copper 0x00600000
+        brass 0x00700000
+        cement 0x00800000
+        rock 0x00900000
+        gravel 0x00a00000
+        pavement 0x00b00000
+        brick 0x00c00000
+        clay 0x00d00000
+        grass 0x00e00000
+        dirt 0x00f00000
+        mud 0x01000000
+        snow 0x01100000
+        ice 0x01200000
+        sand 0x01300000
+        ceramictile 0x01400000
+        linoleum 0x01500000
+        rug 0x01600000
+        plaster 0x01700000
+        plastic 0x01800000
+        cardboard 0x01900000
+        hardwood 0x01a00000
+        softwood 0x01b00000
+        plank 0x01c00000
+        glass 0x01d00000
+        water 0x01e00000
+        stucco 0x01f00000
+}
